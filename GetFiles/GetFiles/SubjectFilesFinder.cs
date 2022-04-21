@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GetFiles;
 
-static public class SubjectLocationFinder
+static public class SubjectFilesFinder
 {
     //No subfolders yet
     public static string[] ListFiles(string path)
