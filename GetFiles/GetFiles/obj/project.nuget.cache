@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f1STJTCwAMY08EYBfcsufx05wUpY/uC73Oio2X2xP29L00nHBYKll39ATC09w6VRGDVUAEooFwxEHF+TLf/HNw==",
+  "dgSpecHash": "ASlfChgyoUQx0KnperkZv3pE7aSG3tGHMkbkRrcJZolSIicB+AzH8anSQKE/lzFNIyp2wv9ADs8UtKagDSJtpQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Stephan\\OneDrive - HTL Neufelden\\Hackathon2022\\GetFiles\\GetFiles\\GetFiles.csproj",
+  "projectFilePath": "C:\\Users\\Stephan\\OneDrive - HTL Neufelden\\Hackathon2022\\nlpStudier\\GetFiles\\GetFiles\\GetFiles.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Stephan\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.0\\microsoft.extensions.configuration.6.0.0.nupkg.sha512",
     "C:\\Users\\Stephan\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.0\\microsoft.extensions.configuration.abstractions.6.0.0.nupkg.sha512",

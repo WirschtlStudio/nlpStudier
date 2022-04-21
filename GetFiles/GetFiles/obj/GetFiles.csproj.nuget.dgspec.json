@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Stephan\\OneDrive - HTL Neufelden\\Hackathon2022\\GetFiles\\GetFiles\\GetFiles.csproj": {}
+    "C:\\Users\\Stephan\\OneDrive - HTL Neufelden\\Hackathon2022\\nlpStudier\\GetFiles\\GetFiles\\GetFiles.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Stephan\\OneDrive - HTL Neufelden\\Hackathon2022\\GetFiles\\GetFiles\\GetFiles.csproj": {
+    "C:\\Users\\Stephan\\OneDrive - HTL Neufelden\\Hackathon2022\\nlpStudier\\GetFiles\\GetFiles\\GetFiles.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Stephan\\OneDrive - HTL Neufelden\\Hackathon2022\\GetFiles\\GetFiles\\GetFiles.csproj",
+        "projectUniqueName": "C:\\Users\\Stephan\\OneDrive - HTL Neufelden\\Hackathon2022\\nlpStudier\\GetFiles\\GetFiles\\GetFiles.csproj",
         "projectName": "GetFiles",
-        "projectPath": "C:\\Users\\Stephan\\OneDrive - HTL Neufelden\\Hackathon2022\\GetFiles\\GetFiles\\GetFiles.csproj",
+        "projectPath": "C:\\Users\\Stephan\\OneDrive - HTL Neufelden\\Hackathon2022\\nlpStudier\\GetFiles\\GetFiles\\GetFiles.csproj",
         "packagesPath": "C:\\Users\\Stephan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Stephan\\OneDrive - HTL Neufelden\\Hackathon2022\\GetFiles\\GetFiles\\obj\\",
+        "outputPath": "C:\\Users\\Stephan\\OneDrive - HTL Neufelden\\Hackathon2022\\nlpStudier\\GetFiles\\GetFiles\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Stephan\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -9,6 +9,11 @@ namespace GetFiles
     [Serializable]
     public class Subject
     {
+        public Subject(string name, string path)
+        {
+            this.Name = name;
+            this.Path = path;
+        }
         public string Name { get; set; }
         public string Path { get; set; }
     }
