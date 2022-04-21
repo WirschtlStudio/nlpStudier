@@ -11,20 +11,23 @@ static public class SubjectFilesFinder
     /// <summary>
     /// Returns all paths of files that fit a search criteria.
     /// </summary>
-    /// <param name="path"></param>
-    /// <param name="searchPattern"></param>
-    /// <returns></returns>
-    public static List<string> GetAllFiles(string path, string searchPattern)
+    /// <param name="path">Path of Parentfolder</param>
+    /// <param name="searchCriteria">Criteria to get the right paths</param>
+    /// <returns>Returns a String-List with paths</returns>
+    public static List<string> GetAllFilePaths(string path, string searchCriteria)
     {
-        return Directory.EnumerateFiles(path, searchPattern).Union(
-            Directory.EnumerateDirectories(path).SelectMany(d =>
+        // at first, gets a list of directories and then collects paths within these directories
+        return Directory.EnumerateFiles(path, searchCriteria).Union(
+            Directory.EnumerateDirectories(path).SelectMany(o =>
             {
                 try
                 {
-                    return GetAllFiles(d, searchPattern);
+                    // recursive, because subfolders could contain files too.
+                    return GetAllFilePaths(o, searchCriteria);
                 }
                 catch (Exception)
                 {
+                    // Any error returns empty enumerable
                     return Enumerable.Empty<string>();
                 }
             })).ToList<string>();

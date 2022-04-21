@@ -22,7 +22,9 @@ var readSubjectFavorites = JsonSerializer.Deserialize<Subject[]>(readData);
 
 // find files within a specific name criteria
 // forexample, to find jpg -> criteria is "*.jpg"
-var files = SubjectFilesFinder.GetAllFiles(subjectFavorites[0].Path, "").ToArray();
+var files = SubjectFilesFinder.GetAllFilePaths(subjectFavorites[0].Path, "*.jpg").ToArray();
+
+// Listing all paths to console
 foreach(var s in files)
 {
     Console.WriteLine(s);
