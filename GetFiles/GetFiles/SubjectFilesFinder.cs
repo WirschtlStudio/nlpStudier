@@ -8,16 +8,26 @@ namespace GetFiles;
 
 static public class SubjectFilesFinder
 {
-    //No subfolders yet
-    public static string[] ListFiles(string path)
+    /// <summary>
+    /// Returns all paths of files that fit a search criteria.
+    /// </summary>
+    /// <param name="path"></param>
+    /// <param name="searchPattern"></param>
+    /// <returns></returns>
+    public static List<string> GetAllFiles(string path, string searchPattern)
     {
-        string[] files = Directory.GetFiles(path);
-        return files;
-    }
-    public static string[] ListFiles(string path, string criteria)
-    {
-        string[] files = Directory.GetFiles(path, criteria);
-        return files;
+        return Directory.EnumerateFiles(path, searchPattern).Union(
+            Directory.EnumerateDirectories(path).SelectMany(d =>
+            {
+                try
+                {
+                    return GetAllFiles(d, searchPattern);
+                }
+                catch (Exception)
+                {
+                    return Enumerable.Empty<string>();
+                }
+            })).ToList<string>();
     }
 }
 
